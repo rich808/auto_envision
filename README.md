@@ -6,7 +6,7 @@ Current Web Application : https://auto-envision.herokuapp.com/
 For a car buyer, the current research/car shopping process is in 1 of 3 ways. One, the buyer knows the make/model he/she is looking for. Two, the buyer isn't exactly sure, so he/she uses car style criteria. Lastly, when the previous two steps weren't good enough, he/she will uses advance search for more criteria to filter. 
 
 Screenshot of a search bar from AutoTrader highlighted the 3 methods:
-![](./images/search_bar.pg)
+![](./images/search_bar.png)
 
 The results after those methods returns a long list of car options. If the search for a used car, the result will be much longer where it includes different generations of the same model name. Each of 3 method requires buyer to have some knowledge of what he/she wants.
 
@@ -105,9 +105,9 @@ After all image augmentations, each model now has a total of 2400 images.
 
 For the dataset of 9600 images, it was split into 3 sets for training, validation and test.
 
-*Each activation layer uses Rectified Linear Units (ReLU)
+*Each activation layer uses Rectified Linear Units (ReLU).*
 
-*Output layer uses softmax, for mulitclass-classification.
+*Output layer uses softmax, for mulitclass-classification.*
 
 #### Neural Network Model From Scratch
 
@@ -115,16 +115,16 @@ I started with broad Convolution Neural Network setup of:
 
 Layers|
 |---|
-Conv2D: 32 filters of 7 x 7 matrix|
+Conv2D: 32 filters of 3 x 3 matrix|
 MaxPool: 2 x 2 matrix|
 Dropout: 0.25|
-Conv2D: 32 filters of 7 x 7 matrix|
+Conv2D: 32 filters of 3 x 3 matrix|
 MaxPool: 2 x 2 matrix|
 Dropout: 0.25|
-Conv2D: 32 filters of 7 x 7 matrix|
+Conv2D: 32 filters of 3 x 3 matrix|
 MaxPool: 2 x 2 matrix|
 Dropout: 0.25|
-Conv2D: 32 filters of 7 x 7 matrix|
+Conv2D: 32 filters of 3 x 3 matrix|
 MaxPool: 2 x 2 matrix|
 Dropout: 0.25|
 Flatten|
@@ -142,11 +142,11 @@ It started with a layer with 2 convolutional layers with wide size of 7 by 7 mat
 
 ![](./images/car_cnn_acc.png)
 
-1[](./images/car_cnn_loss.png)
+![](./images/car_cnn_loss.png)
 
 Although the accuracy was high, but when it was used on the 35 images test set, it was only able to correctly classify 25 images, or about **72%**. This showed weakness in the model where it couldn't effectively generalize images beyond the dataset; therefore, the model was overfitting. 
  
-To reduce overfitting without adding more images, I decided to use Keras's pretrained model VGG16
+To reduce overfitting without adding more images, I decided to use Keras's pretrained model VGG16.
 
 #### Neural Network Model with Keras VGG 16
 
@@ -160,7 +160,7 @@ With its pretrained weights, it was about to achieved a validation and test accu
 
 ![](./images/vgg_16_acc.png)
 
-1[](./images/vgg_16_loss.png)
+![](./images/vgg_16_loss.png)
 
 When it was used on the 35 images test set, it was able to correctly classify 32 images, or about **91%**. This model was able to significantly reduce overfitting from the previous model. 
 
@@ -191,9 +191,9 @@ At this point, Auto-enVision is still in primilary stage. In order to improve ef
 
 - Add more images to increase accuracy to as close to 100% as possible.
 
-- Add more car models and interior images
+- Add more car models and interior images.
 
-- Add links of car listings
+- Add links of car listings.
 
 - Breakdown the information in greater details, such as value range for vary conditions. 
 
