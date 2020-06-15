@@ -177,17 +177,17 @@ Both models on the left were the same model with different trim levels, Jaguar F
 
 Since the model with VGG16 achieved higher accuracy than my custom model, I used it into Flask with HTML to deploy into a web application via Heroku for everyone to test.
 
-Example of the current web application:
+Example of current web application:
 
 ![](./images/web_example.png)
 
-For each images, it will display some important information. 
+For each image, it will display some important information. 
 
 ### Conclusion/Improvments
 
 The model is capable of recognizing car model through imagery with high accuracy. With this application, it will condense mulitple steps of car reserach for a car buyer and car seller into 1 simple step. Thus, it will reduce stress for car buyers and sellers. 
 
-At this point, Auto-enVision is still in primilary stage. In order to improve effectivess and become a better model overall, it needs:
+At this point, Auto-enVision is still in primilary stage. In order to improve effectivess and become a better model overall, it need:
 
 - Add more images to increase accuracy to as close to 100% as possible.
 
