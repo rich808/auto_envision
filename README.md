@@ -3,7 +3,7 @@
 Current Web Application : https://auto-envision.herokuapp.com/
 
 ## Motivations
-For a car buyer, the current research/car shopping process is in 1 of 3 ways. One, the buyer knows the make/model he/she is looking for. Two, the buyer isn't exactly sure, so he/she uses car style criteria. Lastly, when the previous two steps weren't good enough, he/she will uses advance search for more criteria to filter. 
+For a car buyer, the current research/car shopping process is in 1 of 3 ways. First way, the buyer knows the make/model he/she is looking for. Second way, the buyer isn't exactly sure, so he/she uses car style criteria. Lastly, when the previous two steps weren't good enough, he/she will uses advance search for more criteria to filter. 
 
 Screenshot of a search bar from AutoTrader highlighted the 3 methods:
 ![](./images/search_bar.png)
@@ -12,7 +12,7 @@ The results after those methods returns a long list of car options. If the searc
 
 This rises my first question:
 
-What if a car buyer doesn't know what he/she wants but has a image of the car he/she likes without any knowledge about it, can there be a simple way for him/her to learn about the car in the image without going through searching and/filters process?
+What if a car buyer doesn't know what he/she wants but has a image of the car he/she likes without any knowledge about it, can there be a simple way for him/her to learn about the car in the image without going through searching/filtering process?
 
 For a car seller, the current process required the seller to research through Kelly Blue Book, Craiglist, or other 3rd party resell sites to get a approximated worth of his/her car. 
 
@@ -20,13 +20,19 @@ This rises my second question:
 
 Can there be a simple step to condense multiple steps into 1 step for the car owner to get a worth range for his/her car?
 
+According to Autotrader, mobile device usage for car research has surpass 53% and has been on increasing trend since 2015.
+
+This rises my third question:
+
+Are there ways to ultiize mobile device to allow car buyers and car sellers to do car reserach whenever/whereever they spotted a car they like? 
+
 The answer to these questions, Auto-enVision.
 
 
 ## What is Auto-enVision?
-Auto-enVision is a car model recognition tool that uses image. After an car image is uploaded, it returns relevent information about the car, such as make/make, year, trim/MSRP, specifications and used value. 
+Auto-enVision is a car model recognition tool. After a car image is uploaded, it returns relevent information about the car, such as make/make, year, trim/MSRP, specifications and used value. 
 
-If you are a car buyer, this will help filter information to the generation model of the image. This enables you to do car ressearch whenever or whenever you see a car. For example, if you are on a street and spotted a car that appeals to you, you can use Auto-enVision. 
+If you are a car buyer, this will help filter information to the generation model in the image. This enables you to do car ressearch whenever or whenever you see a car. For example, if you are on a street and spotted a car that appeals to you, you can use Auto-enVision. 
 If you are a car seller, you can upload an image of your car to Auto-enVision to quickly get the current worth range in the used market.   
 
 Pros: 
